@@ -4,24 +4,23 @@
 		<title>Fancify Shamcify</title>
 
 		<!-- link to your script file here -->
-		<script src="fancitymytext.js"></script>
+		<script src="fancifymytext.js"></script>
 		
 	</head>
 
 	<body>
 		<h1>Fancify my Text</h1>
 		<label for="textbox">Text</label>
-		<textarea rows="4" cols="30" id="textbox">
-			You can type here
+		<textarea rows="4" cols="30" id="textbox" style="font-size: 1.0em;" style="color:black" font-weight: normal>You can type here
 		</textarea>
 		<fieldset>
 			<legend>Buttons to press</legend>
-			<button onclick="alertFunc()">Bigger!</button>
+			<button onclick=alertFunc()>Bigger!</button><br/>
 
-			<input type="radio" id="Fancy">
+			<input type="radio" id="Fancy" onChange="fancyText()">
 			<label for="Fancy">FancyShmancy</label><br/>
 
-			<input type="radio" id="Boring">
+			<input type="radio" id="Boring" onChange="boringText()">
 			<label for="Boring">BoringBetty</label><br/>
 
 		</fieldset>
